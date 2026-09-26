@@ -2079,6 +2079,8 @@ if [[ "$ramdisk" == 1 || "$restore" == 1 || "$dump_blobs" == 1 || "$force_activa
                 _download_ramdisk_boot_files $deviceid $replace 14.3
             elif [[ "$deviceid" == "iPad"* && ! "$deviceid" == "iPad4"* ]]; then
                 _download_ramdisk_boot_files $deviceid $replace 14.3
+            elif [[ "$deviceid" == "iPhone10"* || "$cpid" == "0x8015"* ]]; then
+                _download_ramdisk_boot_files $deviceid $replace 14.3
             else
                 _download_ramdisk_boot_files $deviceid $replace 12.5.4
             fi
@@ -2159,6 +2161,8 @@ if [[ "$ramdisk" == 1 || "$restore" == 1 || "$dump_blobs" == 1 || "$force_activa
             if [[ "$(./java/bin/java -jar ./Darwin/FirmwareKeysDl-1.0-SNAPSHOT.jar -e 14.3 $deviceid)" == "true" ]]; then
                 cd "$dir"/$deviceid/$cpid/ramdisk/14.3
             elif [[ "$deviceid" == "iPad"* && ! "$deviceid" == "iPad4"* ]]; then
+                cd "$dir"/$deviceid/$cpid/ramdisk/14.3
+            elif [[ "$deviceid" == "iPhone10"* || "$cpid" == "0x8015"* ]]; then
                 cd "$dir"/$deviceid/$cpid/ramdisk/14.3
             else
                 cd "$dir"/$deviceid/$cpid/ramdisk/12.5.4
@@ -2394,6 +2398,8 @@ if [[ "$ramdisk" == 1 || "$restore" == 1 || "$dump_blobs" == 1 || "$force_activa
                     if [[ "$(./java/bin/java -jar ./Darwin/FirmwareKeysDl-1.0-SNAPSHOT.jar -e 14.3 $deviceid)" == "true" ]]; then
                         cd "$dir"/$deviceid/$cpid/ramdisk/14.3
                     elif [[ "$deviceid" == "iPad"* && ! "$deviceid" == "iPad4"* ]]; then
+                        cd "$dir"/$deviceid/$cpid/ramdisk/14.3
+                    elif [[ "$deviceid" == "iPhone10"* || "$cpid" == "0x8015"* ]]; then
                         cd "$dir"/$deviceid/$cpid/ramdisk/14.3
                     else
                         cd "$dir"/$deviceid/$cpid/ramdisk/12.5.4

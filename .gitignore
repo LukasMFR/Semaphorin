@@ -74,6 +74,8 @@ mobactivationd.*
 dyld_shared_cache_arm64.*
 *.swp
 .DS_Store
+semaphorin.sh.*
+fix14/
 
 # Specific firmware components
 avefw.*
