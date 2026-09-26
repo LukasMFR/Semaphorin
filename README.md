@@ -9,6 +9,8 @@
 <h6 align="center"> Supports* iOS 7.0.6-12.1 as well as A7-A11 devices </h6>
 <h6 align="center"> This is a fork of the tool with some updates </h6>
 
+This fork fixes the iPhone X / A11 ramdisk fallback to iOS 14.3 and DFU detection on newer macOS versions, including Apple Silicon Macs.
+
 ## IF YOUR DEVICE SUPPORTS [LEGACY-IOS-KIT](https://github.com/LukeZGD/Legacy-iOS-Kit), YOU SHOULD REALLY USE THAT OVER THIS.
 
 ## Support
